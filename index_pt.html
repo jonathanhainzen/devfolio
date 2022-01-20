@@ -89,31 +89,31 @@
                         <p><span class="title-s">Name: </span> <span>Jonathan Hainzenreder de Souza</span></p>
                         <p><span class="title-s">Profile: </span> <span>Analista de Sistemas </span></p>
                         <p><span class="title-s">Email: </span> <span>john.hainzen@hotmail.com</span></p>
-                        <p><span class="title-s">Phone: </span> <span onClick="goToWhatsapp(998001001)" style="cursor:pointer">+55 48 9 9800 1001 </span></p>
+                        <p><span class="title-s">Phone: </span> <span title="Clique para enviar uma msg via whatsapp"  onClick="goToWhatsapp(998001001)" style="cursor:pointer">+55 48 9 9800 1001 </span></p>
                       </div>
                     </div>
                   </div>
                   <div class="skill-mf">
-                    <p class="title-s">Habilidades</p>
-                    <span>PHP</span> <span class="pull-right">75%</span>
+                    <p class="title-s">Skill</p>
+                    <span id="idPhp">PHP</span> <span class="pull-right">75%</span>
                     <div class="progress">
-                      <div class="progress-bar" role="progressbar" style="width: 75%; " aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                      <div id="idDivPbarPhp" class="progress-bar" role="progressbar" style="width: 75%; background-color: rgb(51, 73, 172); " aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
                     </div>
-                    <span>JAVA</span> <span class="pull-right">60%</span>
+                    <span id="idJava">JAVA</span> <span class="pull-right">60%</span>
                     <div class="progress">
-                      <div class="progress-bar" role="progressbar" style="width: 60%; background-color: rgb(173, 81, 81);" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                      <div id="idDivPbarJava" class="progress-bar" role="progressbar" style="width: 60%; background-color: rgb(173, 81, 81);" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
                     </div>
-                    <span>HTML</span> <span class="pull-right">85%</span>
+                    <span id="idHtml">HTML</span> <span class="pull-right">85%</span>
                     <div class="progress">
-                      <div class="progress-bar" role="progressbar" style="width: 85%; background-color: cornflowerblue;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                      <div id="idDivPbarHtml" class="progress-bar" role="progressbar" style="width: 85%; background-color: rgb(91, 93, 99);" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
                     </div>
-                    <span>CSS3</span> <span class="pull-right">75%</span>
+                    <span id="idCss">CSS</span> <span class="pull-right">75%</span>
                     <div class="progress">
-                      <div class="progress-bar" role="progressbar" style="width: 75%; background-color: darkcyan;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                      <div id="idDivPbarCss" class="progress-bar" role="progressbar" style="width: 75%; background-color: darkcyan;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
                     </div>
-                    <span>JAVASCRIPT</span> <span class="pull-right">80%</span>
+                    <span id="idJs">JAVASCRIPT</span> <span class="pull-right">80%</span>
                     <div class="progress">
-                      <div class="progress-bar" role="progressbar" style="width: 80%; background-color:darksalmon; " aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                      <div id="idDivPbarJs" class="progress-bar" role="progressbar" style="width: 80%; background-color:darksalmon; " aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
                     </div>
                   </div>
                 </div>
@@ -124,7 +124,7 @@
                         Perfil pessoal
                       </h5>
                     </div>
-                    <p class="lead">
+                    <p class="lead thover" >
                       Sou Desenvolvedor de software e Analista de Sistemas, com entusiasmo em trabalhar com Tecnologia. Gosto de trabalhar 
                       em equipes comprometidas em atingir as metas da organização alinhados com a visão e objetivos do negócio.
                       Tenho  mais de 10 anos de experiência na área, com vasta habilidade para resolução de problemas, trabalho em equipe, 
@@ -132,15 +132,13 @@
                     </p>
                     </br>
                   </br>
-                    <p class="lead">
-                     
-                    </p>
+                   
                     <div class="title-box-2">
                       <h5 class="title-left">
                         Áreas de conhecimento
                       </h5>
                     </div>
-                    <p class="lead">
+                    <p class="lead thover">
                       - Inglês avançado - experiência em conversação  (leitura e escrita)
                       - PHP, JAVA (Desktop e web)
                       - HTML, CSS, Javascript, jQuery, Ajax, BootStrap
@@ -178,10 +176,10 @@
               <div class="service-ico">
                 <span class="ico-circle"><i class="bi bi-person-workspace"></i>
                 </span>
-              </div>
-              <div class="service-content">
+              </div> 
+              <div class="service-content thover">
                 <h2 class="s-title">Front End</h2>
-                <p class="s-description text-center">
+                <p class="s-description text-center thover">
                   <!--Experience in developing html/css/javascript web applications and also desktop applications with JavaFX -->
                    Experiência em desenvolvimento de aplicações web html/css/javascript e também aplicações desktop com JavaFX 
                 </p>
@@ -193,9 +191,9 @@
               <div class="service-ico">
                 <span class="ico-circle"><i class="bi bi-cpu"></i></span>
               </div>
-              <div class="service-content">
+              <div class="service-content thover">
                 <h2 class="s-title">Back End </h2>
-                <p class="s-description text-center">
+                <p class="s-description text-center thover">
                  <!-- Experience with server side applications, with PHP and JAVA, with various databases, such as MySQL, PostgreSQL, SQLServer etc. -->
                   Experiência com aplicações server side, com PHP e JAVA, e com bancos de dados variados, tais como MySQL, PostgreSQL, SQLServer etc.
                 </p>
@@ -207,9 +205,9 @@
               <div class="service-ico">
                 <span class="ico-circle"><i class="bi bi-device-hdd"></i></span>
               </div>
-              <div class="service-content">
+              <div class="service-content thover">
                 <h2 class="s-title">DevOps</h2>
-                <p class="s-description text-center">
+                <p class="s-description text-center thover">
                   <!-- Keeping servers and services based on Linux and Windows, such as Apache, NGinx, Wildfly and etc. Also databases administration. -->
                   Mantendo servidores em base Linux e Windows, tais como Apache, NGinx, Wildfly e etc. E também serviços relacionados.
                 </p>
@@ -348,13 +346,13 @@
                     <div class="more-info" style="color: black;">
                       <ul class="list-ico">
                         <li><span class="bi bi-geo-alt"></span> Criciúma, SC, Brasil</li>
-                        <li onClick="goToWhatsapp(998001001)" style="cursor:pointer"><span class="bi bi-phone"></span>+55 (48) 9 9800 1001</li>
+                        <li onClick="goToWhatsapp(998001001)" style="cursor:pointer" title="Clique para enviar uma msg via whatsapp"><span class="bi bi-phone"></span>+55 (48) 9 9800 1001</li>
                         <li><span class="bi bi-envelope"></span> john.hainzen@hotmail.com</li>
                       </ul>
                     </div>
                     <div class="socials">
                       <ul>
-                        <li onClick="goToWhatsapp(998001001)"><a style="cursor:pointer" title="Send msg via whatsapp" target="_blank"><span class="ico-circle"><i class="bi bi-whatsapp"></i></span></a></li>
+                        <li onClick="goToWhatsapp(998001001)"><a style="cursor:pointer" title="Enviar msg via whatsapp" target="_blank"><span class="ico-circle"><i class="bi bi-whatsapp"></i></span></a></li>
                         <li><a href="https://www.linkedin.com/in/jonathan-hainzenreder-de-souza-52855a120/"  target="_blank"><span class="ico-circle"><i class="bi bi-linkedin"></i></span></a></li>
                       </ul>
                     </div>
@@ -395,10 +393,11 @@
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendor/typed.js/typed.min.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/js/jquery.js" type="text/javascript"></script> 
+  <script src="assets/js/jquery-2.1.1.min.js" type="text/javascript"></script> 
 
-  <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
-  <script src="assets/js/funcoes.js"></script>  
+  <script src="assets/js/funcoes.js"></script>
 </body>
 
 
