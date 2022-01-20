@@ -1295,3 +1295,10 @@ footer .credits {
 footer .credits a {
   color: #fff;
 }
+.ahovers:hover{
+  color: #fff;
+  
+}
+.thover:hover{
+  color: rgb(19, 18, 18);
+}
