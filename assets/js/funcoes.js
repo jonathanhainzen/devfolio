@@ -129,7 +129,7 @@
             },
             error: function(jqXHR, status, error) {
                 console.log(status, error);
-				$('#idDiv1').fadeIn('fast');$('#idDiv1').html(('Error: '+error));
+				//$('#idDiv1').fadeIn('fast');$('#idDiv1').html(('Error: '+error));
             }
         });
     }
