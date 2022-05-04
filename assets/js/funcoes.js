@@ -124,12 +124,12 @@
             data: {funcontrol: funCod},
             // dataType: "json",
             success: function(data){
-				$('#idDiv1').fadeIn('fast');$('#idDiv1').html(('> SUCCESS: '+data));
-                console.log(JSON.stringify(data));
+				//$('#idDiv1').fadeIn('fast');$('#idDiv1').html(('> SUCCESS: '+data));
+                console.log(data);
             },
             error: function(jqXHR, status, error) {
                 console.log(status, error);
-				$('#idDiv1').fadeIn('fast');$('#idDiv1').html(('> SUCCESS: '+error));
+				$('#idDiv1').fadeIn('fast');$('#idDiv1').html(('Error: '+error));
             }
         });
     }

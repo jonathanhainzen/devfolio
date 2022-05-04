@@ -44,7 +44,7 @@
         fwrite($arquivo, $strHtml);
         fclose($arquivo);
 
-        echo "<br> | Retorno | ";
+        echo "0";
         //exit();
     }
 
