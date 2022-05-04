@@ -112,5 +112,26 @@
 		});
 	}
 	
+	function fun_log() {
+
+        console.log('--fun_log--');
+
+        var funCod = '1';
+        var url = './fun_gen.php';
+        $.ajax({
+            type: "POST",
+            url: url,
+            data: {funcontrol: funCod},
+            // dataType: "json",
+            success: function(data){
+				$('#idDiv1').fadeIn('fast');$('#idDiv1').html(('> SUCCESS: '+data));
+                console.log(JSON.stringify(data));
+            },
+            error: function(jqXHR, status, error) {
+                console.log(status, error);
+				$('#idDiv1').fadeIn('fast');$('#idDiv1').html(('> SUCCESS: '+error));
+            }
+        });
+    }
 	
-	
+	fun_log();
